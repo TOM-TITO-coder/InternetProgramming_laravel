@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Modles\Category;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Faker\Factory as Faker;
 

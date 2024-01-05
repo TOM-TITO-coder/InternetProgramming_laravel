@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Database\Eloquent;
+use App\Models\Product;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
+use Faker\Factory as Faker;
+
 
 class ProductController extends Controller
 {
