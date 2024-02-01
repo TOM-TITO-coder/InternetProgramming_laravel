@@ -8,17 +8,15 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Faker\Factory as Faker;
 
-
 class ProductController extends Controller
 {
-
-     // GetAll /api/products
+    // GetAll /api/products
     public function getProducts(){
         $product = Product::all();
 
         return view("showpro",['p' => $product]);
     }
-
+    
     // Post /api/products
     public function createProduct(){
         $fake = Faker::create();
@@ -36,7 +34,7 @@ class ProductController extends Controller
         return view("showpro",['p' => Product::all()]);
 
     }
-
+    
     // GetOne /api/products/{product}
     public function getProduct($product){
         $pro[] = Product::find($product);
